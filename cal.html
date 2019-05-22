@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="cal.css">
+    <title>Calculate it!</title>
+</head>
+<body>
+    <table>
+            <!-- head section -->
+        <tr>
+            <tr>
+                <td class="heading">
+                    Casio Calculator
+                </td>
+            </tr>
+            <td>
+                <input type="text" id="input" placeholder="0" readonly="xchange">
+                <input type="text" id="answer" readonly="xchange" style="color: green;">
+            </td>
+            <tr>
+            <!-- button section -->
+                <tr>
+                    <td>
+                        <input type="button" value="CE" onclick="clearscreen()">
+                        <input type="button" value=" / " onclick="getOperator('/')">
+                        <input type="button" value=" x " onclick="getOperator('x')">
+                        <input type="button" value="&#8592;" onclick="backspace()" style="color: white; background: red;">
+                        <br>
+                        <input type="button" value=" 1 " onclick="getNumber(1)">
+                        <input type="button" value=" 2 " onclick="getNumber(2)">
+                        <input type="button" value=" 3 " onclick="getNumber(3)">
+                        <input type="button" value=" + " onclick="getOperator('+')">
+                        <br>
+                        <input type="button" value=" 4 " onclick="getNumber(4)">
+                        <input type="button" value=" 5 " onclick="getNumber(5)">
+                        <input type="button" value=" 6 " onclick="getNumber(6)">
+                        <input type="button" value=" - " onclick="getOperator('-')">
+                        <input type="button" value=" ( ) " onclick="brackets()">
+                        <br>
+                        <input type="button" value=" +/- " onclick="getOperator('+/-')">
+                        <input type="button" value=" 0 " onclick="getNumber(0)">
+                        <input type="button" value=" = " onclick="calculate()" style="width: 120px; color: white; background: green">
+                        <br>
+                    </td>
+                </tr>
+            </tr>
+        </tr>
+    </table>
+    <script src="cal.js"></script>
+</body>
+</html>
